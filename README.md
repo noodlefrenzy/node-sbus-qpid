@@ -4,9 +4,10 @@ Introduction
 [![Build Status](https://secure.travis-ci.org/noodlefrenzy/node-sbus-qpid.png?branch=master)](https://travis-ci.org/noodlefrenzy/node-sbus-qpid)
 [![Dependency Status](https://david-dm.org/noodlefrenzy/node-sbus-qpid.png)](https://david-dm.org/noodlefrenzy/node-sbus-qpid)
 
-`node-sbus-amqp10` is a simple adapter you can pass to `node-sbus` to have it use the `node-amqp-1-0`
- module for all AMQP calls.  Since `node-amqp-1-0`, unlike `node-qpid`, has no native code dependencies
- it can run on a variety of hardware platforms that are denied to Apache's Qpid Proton.
+`node-sbus-amqp10` is a simple adapter you can pass to `node-sbus` to have it use the `node-qpid`
+ module for all AMQP calls.  Since `node-qpid`, unlike `node-amqp-1-0`, has native code dependencies
+ on Apache's Qpid Proton, it can only run on Linux/*nix systems (so far), but is likely to be faster than
+ the "pure node" version (not yet verified).
 
  Details
  =======
