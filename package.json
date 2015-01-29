@@ -1,0 +1,47 @@
+{
+  "name": "node-sbus-qpid",
+  "version": "0.0.1",
+  "description": "Adapter for node-sbus module to use the node-qpid (based on Apache Qpid Proton) module for all AMQP-related calls.",
+  "main": "index.js",
+  "engines": {
+    "node": ">= 0.8"
+  },
+  "dependencies": {
+    "node-amqp-encoder": "noodlefrenzy/node-amqp-encoder",
+    "node-qpid": "git://github.com/jmspring/node-qpid#eventhub-base-support-0.4",
+    "node-sbus": "noodlefrenzy/node-sbus"
+  },
+  "devDependencies": {
+    "jshint": "^2.5.11",
+    "mocha": "^1.21.4",
+    "should": "^4.0.4"
+  },
+  "scripts": {
+    "pretest": "jshint index.js",
+    "test": "mocha test"
+  },
+  "author": {
+    "name": "noodlefrenzy",
+    "email": "milanz@microsoft.com",
+    "url": "http://www.mikelanzetta.com"
+  },
+  "homepage": "https://github.com/noodlefrenzy/node-sbus-qpid",
+  "licenses": [
+    "MIT"
+  ],
+  "keywords": [
+    "amqp",
+    "amqp 1.0",
+    "amqp-1-0",
+    "messaging",
+    "queues",
+    "azure",
+    "servicebus",
+    "topics",
+    "qpid"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/noodlefrenzy/node-sbus-qpid.git"
+  }
+}
